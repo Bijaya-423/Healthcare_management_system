@@ -1,0 +1,153 @@
+{% comment %} 
+<a href="pviews" ><button>viewdata</button></a>
+<h1>welcome to phome patient home page {{name|title}}</h1> {% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Home Page</title>
+    {% comment %} <link rel="stylesheet" href="styles.css"> {% endcomment %}
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#welcome {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#welcome h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+#welcome p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">HealthCare</div>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#appointments">Appointments</a></li>
+                <li><a href="#messages">Messages</a></li>
+                <li><a href="#prescriptions">Prescriptions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome">
+            {% comment %} <h1>Welcome, [Patient Name]</h1> {% endcomment %}
+            <h1>welcome to, patient {{name|title}}</h1>
+            <p>Here you can manage your health records, appointments, and more.</p>
+        </section>
+        <section id="profile" class="card">
+            <h2>Profile</h2>
+            <p>View and edit your personal information.</p>
+            <button>View Profile</button>
+        </section>
+        <section id="appointments" class="card">
+            <h2>Appointments</h2>
+            <p>Check your upcoming appointments and schedule new ones.</p>
+            <button>View Appointments</button>
+        </section>
+        <section id="messages" class="card">
+            <h2>Messages</h2>
+            <p>Read and send messages to your healthcare providers.</p>
+            <button>View Messages</button>
+        </section>
+        <section id="prescriptions" class="card">
+            <h2>Prescriptions</h2>
+            <p>Manage your prescriptions and request refills.</p>
+            <button>View Prescriptions</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 HealthCare. All rights reserved.</p>
+    </footer>
+</body>
+</html>
