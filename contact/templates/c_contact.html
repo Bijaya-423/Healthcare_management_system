@@ -1,0 +1,18 @@
+<html>
+<body>
+<h1>Contact Us</h1>
+<form method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <label for="mobile">Mobile:</label>
+  <input type="tel" id="mobile" name="mobile"><br><br>
+  <label for="address">Address:</label>
+  <textarea id="address" name="address"></textarea><br><br>
+  <input type="submit" value="Submit">
+  {% csrf_token %}
+</form>
+</body>
+</html>
+{{output}}
