@@ -1,0 +1,229 @@
+{% extends "base.html" %}
+{% block content%}
+
+{% load static %}
+
+
+<main>
+
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        {% comment %} <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> {% endcomment %}
+        
+        
+        <img src="{% static 'images/banner3.jpg' %}" class="bd-placeholder-img" width="100%" height="700px">
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        {% comment %} <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> {% endcomment %}
+        {%load static%}
+
+        <img src="{% static 'images/banner.jpg' %}" class="bd-placeholder-img" width="100%" height="700px">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        {% comment %} <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> {% endcomment %}
+
+        <img src="{% static 'images/hospital.jpg' %}" class="bd-placeholder-img" width="100%" height="700px">
+        
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+<br><br><br>
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        {% comment %} <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> {% endcomment %}
+        <img src="https://zsshospital.in/images/abt15.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)">
+        <h2 class="fw-normal">GENERAL SPECIALITY</h2>
+        <p><h6>General Medicine</h6>
+          <h6>Emergency Medicine</h6>
+          <h6>General Surgery</h6>
+          <h6>Geriatrics</h6>
+          <h6>Paediatric</h6>
+          <h6>Obstetrics & Gynaecology</h6>
+          <h6>Anaesthesiology</h6>
+          <h6>Dermatology & Venerology</h6>
+          <h6>Opthalmology</h6>
+          <h6>ENT</h6>
+          <h6>Orthopedics</h6>
+          <h6>Psychiatry</h6>
+          <h6>Pulmonary Medicine</h6>
+          <h6>Community Medicine</h6></p>
+
+
+
+        {% comment %} <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> {% endcomment %}
+      
+      
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        {% comment %} <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> {% endcomment %}
+        <img src="https://zenithhospital.in/images/many.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)">
+        <h2 class="fw-normal">SUPER SPECIALITY</h2>
+        <p>
+          <h6>Cardiac Anesthesia</h6>
+          <h6>Cardiology</h6>
+          <h6>Cardiothoracic Surgery</h6>
+          <h6>Clinical Haematology</h6>
+          <h6>Endocrinology</h6>
+            <h6>Immunology & Rheumatology</h6>
+              <h6>Medical Gastroenterology</h6>
+                <h6>Surgical Gastroenterology</h6>
+                  <h6>Neonatology</h6>
+                    <h6>Nephrology</h6>
+                      <h6>Neurology</h6>
+                        <h6>Neurosurgery</h6>
+                          <h6>Medical Oncology</h6>
+                            <h6>Surgcial Oncology</h6></p>
+        
+        
+                            {% comment %} <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> {% endcomment %}
+
+
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        {% comment %} <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> {% endcomment %}
+        <img src="https://www.hindustantimes.com/ht-img/img/2023/12/24/1600x900/Despite-a-shortage-of-super-specialist-doctors-in-_1703445448843.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)">
+        <h2 class="fw-normal">ADVANCED SPECIALITY</h2>
+        <p><h6>Paediatric Gastroenterology</h6>
+          <h6>Paediatric Surgery</h6>
+          <h6>Burn, plastic & Re-constructive Surgery</h6>
+          <h6>Urology</h6>
+          <h6>Kidney Transplant</h6>
+          <h6>Liver Transplant</h6>
+          <h6>Vascular Surgery</h6>
+          <h6>Center of Human Reproduction</h6></p>
+
+
+        {% comment %} <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> {% endcomment %}
+
+
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Centres of Excellence | <span class="text-body-secondary">Cardiology</span></h2>
+        <p class="lead">
+          The Apollo Heart Institutes are regarded as one of the best heart hospitals in India, performing a multitude of treatments and procedures in cardiology and cardiothoracic surgery. The scorecard shows an unmatched record of over 1,52,000 cardiac and cardiothoracic surgeries.
+
+          We have vast experience in the most complicated coronary artery bypass surgery, surgery for all types of valvular heart diseases, paediatric heart surgery, adult and paediatric heart transplantation with success rates comparable to international standards.
+        </p>
+      </div>
+      <div class="col-md-5">
+        {% comment %} <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> {% endcomment %}
+
+        <img src="{% static 'images/cardio.jpg' %}"  class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="900"  role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Centres of Excellence | <span class="text-body-secondary">Nephrology and Urology</span></h2>
+        <p class="lead">Neurology is a centre of excellence at Apollo Hospitals and deals with diagnosis and treatment of disorders of the nervous system. The Apollo Hospital Neuro departments are equipped with the best team and state of the art facilities like Neuro radiology, sleep lab, Intensive care units etc. Our Neuro team takes care of more than 300 variety of problems like aneurisms, dementia, Alzheimer’s, epilepsy, cerebro vascular diseases, headache, multiple sclerosis, stroke, Neuro oncology, neurophysiology, sleep neurology. The Apollo stroke program is a protocol based approach and is benchmarked with the best institutions in the world. Taking the best of care for your nervous system is an aspect whose importance cannot be underlined enough, so leave it to the Apollo eDoc.in portal to find the best neurologists for any challenge that befalls your nerves!   </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+         <img src="{% static 'images/ne.jpg' %}"class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text>
+        {% comment %} <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> {% endcomment %}
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Centres of Excellence | <span class="text-body-secondary">Orthopedics</span></h2>
+        <p class="lead">The Apollo Institutes of Orthopaedics is regarded as one of the best & top orthopaedics hospitals in India with a legacy of innovation and excellence. The Institutes are at the forefront in offering the latest in Orthopedic treatments and Orthopedic surgical advancements in India on par with the best centres in the world.
+
+          Apollo Hospitals offers key & best orthopedic surgeries and procedures in India. We perform bone and joint replacement surgeries which include the most current Arthroscopic and Reconstructive techniques.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="{% static 'images/or.jpg' %}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text> 
+
+        {% comment %} <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> {% endcomment %}
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Centres of Excellence | <span class="text-body-secondary">Neurology</span></h2>
+        <p class="lead">Neurology is a centre of excellence at Apollo Hospitals and deals with diagnosis and treatment of disorders of the nervous system. The Apollo Hospital Neuro departments are equipped with the best team and state of the art facilities like Neuro radiology, sleep lab, Intensive care units etc. Our Neuro team takes care of more than 300 variety of problems like aneurisms, dementia, Alzheimer’s, epilepsy, cerebro vascular diseases, headache, multiple sclerosis, stroke, Neuro oncology, neurophysiology, sleep neurology. The Apollo stroke program is a protocol based approach and is benchmarked with the best institutions in the world. Taking the best of care for your nervous system is an aspect whose importance cannot be underlined enough, so leave it to the Apollo eDoc.in portal to find the best neurologists for any challenge that befalls your nerves!</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="{% static 'images/ner.jpg' %}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text>
+        {% comment %} <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> {% endcomment %}
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Centres of Excellence | <span class="text-body-secondary">Gastroenterology</span></h2>
+        <p class="lead">Gastroenterology deals with the diagnosis and treatment of complications of the gastrointestinal tract, i.e. the stomach and small intestine. A gastroenterologist deals with patients suffering from gastroenteritis, showing symptoms of vomiting, diarrhea, abdominal pain and cramping. With Apollo Hospitals’ qualified bench strength of Gastroenterologists who are the best in their field, finest treatment is just around the corner. Experience a smoother medical experience for booking an appointment or finding the best gastroenterologists for world-class for your gastro-related problems at Apollo Hospitals.</p>
+      </div>
+      <div class="col-md-5">
+         <img src="{% static 'images/ga.jpg' %}" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"  role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em"></text>
+        {% comment %} <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> {% endcomment %}
+      </div>
+    </div>
+    <br><br>
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+
+{% endblock %}

@@ -1,0 +1,155 @@
+{% comment %} 
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    </body>
+</html> {% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Footer Design</title>
+    {% comment %} <link rel="stylesheet" href="styles.css"> {% endcomment %}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 50px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            padding: 0 20px;
+        }
+        
+        .footer-section h2 {
+            margin-bottom: 15px;
+        }
+        
+        .footer-section p,
+        .footer-section ul,
+        .footer-section form {
+            margin: 0 0 15px;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section ul li a:hover {
+            color: #ff6f61;
+        }
+        
+        .footer-section .social-media a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        .footer-section .social-media img {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .footer-section form input[type="email"] {
+            padding: 10px;
+            width: calc(100% - 100px);
+            border: none;
+            border-radius: 3px;
+            margin-right: 10px;
+        }
+        
+        .footer-section form button {
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            border: none;
+            border-radius: 3px;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .footer-section form button:hover {
+            background-color: #e65b50;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #444;
+            margin-top: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Other content of the webpage -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Bhubaneswar,Odisha 789654</p>
+                <p>Phone: 1800-789-7539</p>
+                <p>Email: info@healthcare.com</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/"><img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="Facebook"></a>
+                    <a href="https://x.com/"><img src="https://www.iconpacks.net/icons/2/free-twitter-logo-icon-2429-thumb.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section subscribe">
+                <h2>Newsletter</h2>
+                <p>Subscribe to our newsletter to receive the latest updates.</p>
+                <form action="#">
+                    <input type="email" placeholder="Your Email" required>
+                    <br><br>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
