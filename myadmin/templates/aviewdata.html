@@ -1,0 +1,118 @@
+{% comment %} {% extends "base.html" %}
+{% block content %}
+{% load static %} {% endcomment %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        input[type="submit"] {
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 2px 1px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type="submit"]#edit {
+            background-color: #4CAF50; /* Green */
+        }
+        input[type="submit"]#edit:hover {
+            background-color: #45a049;
+        }
+        input[type="submit"]#delete {
+            background-color: #f44336; /* Red */
+        }
+        input[type="submit"]#delete:hover {
+            background-color: #d32f2f;
+        }
+        @media (max-width: 768px) {
+            table, th, td {
+                display: block;
+                width: 100%;
+            }
+            th, td {
+                box-sizing: border-box;
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+            }
+            th {
+                background-color: #fff;
+                border-bottom: 2px solid #ddd;
+            }
+            tr {
+                border: 1px solid #ddd;
+                margin-bottom: 10px;
+            }
+            input[type="submit"] {
+                width: 100%;
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Admin View Page</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Role Name</th>
+                <th>Action</th>
+            </tr>
+            {% for user in data %}
+            <tr>
+                <form method="post">
+                    {% csrf_token %}
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.mobile }}</td>
+                    <td>{{ user.role_name }}</td>
+                    <td>
+                        <input type="hidden" name="email" value="{{ user.email }}">
+                        <input type="submit" value="edit" name="btn" id="edit">
+                        <input type="submit" value="delete" name="btn" id="delete">
+                    </td>
+                </form>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
+{% comment %} {% endblock %} {% endcomment %}

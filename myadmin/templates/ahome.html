@@ -1,0 +1,162 @@
+
+{% comment %} <a href="aviewdata" ><button>viewdata</button></a>
+
+<h1>welcome to ahome admin home page {{name|title}}</h1> {% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header, footer {
+            width: 100%;
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+            position: fixed;
+            left: 0;
+        }
+    h1{
+        
+            font-family: Arial, sans-serif;
+            font-size: 2.5em; /* Adjust size as needed */
+            color: #333333; /* Dark grey color */
+            text-align: center;
+            background-color: #f0f0f0; /* Light grey background */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+        }
+    
+        
+        header {
+            top: 0;
+        }
+        
+        footer {
+            bottom: 0;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 80px; /* Space for fixed header */
+            padding-bottom: 60px; /* Space for fixed footer */
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        main {
+            background: #fff;
+            padding: 2em;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        
+        main section {
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                width: 100%;
+                padding-top: 100px; /* Adjust for smaller screens */
+            }
+        
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#users">Users</a></li>
+                <li><a href="#settings">Settings</a></li>
+                {% comment %} <li><a href="aviewdata">Viewdata</a></li> {% endcomment %}
+                <li><a href="aviewdata" >viewdata</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <section id="dashboard">
+                <h2>Dashboard</h2>
+                <p>Welcome to the admin dashboard. Here you can manage your website content and settings.</p>
+            </section>
+            <h1>Welcome To <b>{{name|title}}</b> Admin Home Page </h1>
+            <section id="users">
+                <h2>Users</h2>
+                <p>Manage users from this section.</p>
+            </section>
+            <section id="settings">
+                <h2>Settings</h2>
+                <p>Change your settings here.</p>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Admin Dashboard</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('main section');
+            const navLinks = document.querySelectorAll('nav ul li a');
+        
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+        
+                    sections.forEach(section => section.style.display = 'none');
+                    targetSection.style.display = 'block';
+        
+                    navLinks.forEach(nav => nav.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        
+            // Initially show the dashboard section and hide others
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById('dashboard').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

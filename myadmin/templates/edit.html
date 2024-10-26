@@ -1,0 +1,102 @@
+{% comment %} {% extends "base.html" %}
+{% block content %}
+{% load static %} {% endcomment %}
+
+{% comment %} <form action="update" method="post">
+    name<input type="text" name="name" value="{{data1.name}}"><br>
+    email<input type="email" name="email" value="{{data1.email}}"><br>
+    mobile<input type="text" name="mobile" value="{{data1.mobile}}"><br>
+    role_name<input type="text" name="role_name" value="{{data1.role_name}}"><br>
+    <input type="submit" name="btn" value="update"><br>
+    {% csrf_token %}
+</form> {% endcomment %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+    {% comment %} <link rel="stylesheet" href="styles.css"> {% endcomment %}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333333;
+        }
+        
+        input[type="text"], input[type="email"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1 >Edit Page :</h1>
+        <form action="update" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" value="{{data1.name}}"><br>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="{{data1.email}}"><br>
+            
+            <label for="mobile">Mobile</label>
+            <input type="text" id="mobile" name="mobile" value="{{data1.mobile}}"><br>
+            
+            <label for="role_name">Role Name</label>
+            <input type="text" id="role_name" name="role_name" value="{{data1.role_name}}"><br>
+            
+            <input type="submit" name="btn" value="Update"><br>
+            {% csrf_token %}
+        </form>
+    </div>
+</body>
+</html>
+
+
+{% comment %} {% endblock %} {% endcomment %}
