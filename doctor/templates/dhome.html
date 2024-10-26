@@ -1,0 +1,143 @@
+{% comment %} <a href="dviews" ><button>viewdata</button></a> {% endcomment %}
+{% comment %} <h1>Welcome to dHome doctor page {{name|title}}</h1> {% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Home Page</title>
+    {% comment %} <link rel="stylesheet" href="styles.css"> {% endcomment %}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        main .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        main .card h2 {
+            margin-top: 0;
+        }
+        
+        main .card button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
+        main .card button:hover {
+            background-color: #45a049;
+        }
+        
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom:0;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">HealthCare</div>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#patients">Patients</a></li>
+                <li><a href="#appointments">Appointments</a></li>
+                <li><a href="#messages">Messages</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="dviews" ><button>viewdata</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome">
+            <h1>Welcome, Dr. {{name|title}}</h1>
+            <p>Your overview and management portal.</p>
+        </section>
+        <section id="dashboard" class="card">
+            <h2>Dashboard</h2>
+            <p>Quick overview of your activities and notifications.</p>
+            <button>View Dashboard</button>
+        </section>
+        <section id="patients" class="card">
+            <h2>Patients</h2>
+            <p>Manage patient records and details.</p>
+            <button>View Patients</button>
+        </section>
+        <section id="appointments" class="card">
+            <h2>Appointments</h2>
+            <p>Check your schedule and manage appointments.</p>
+            <button>View Appointments</button>
+        </section>
+        <section id="messages" class="card">
+            <h2>Messages</h2>
+            <p>Communicate with your patients and colleagues.</p>
+            <button>View Messages</button>
+        </section>
+        <section id="profile" class="card">
+            <h2>Profile</h2>
+            <p>Update your profile and contact information.</p>
+            <button>View Profile</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 HealthCare. All rights reserved.</p>
+    </footer>
+</body>
+</html>
