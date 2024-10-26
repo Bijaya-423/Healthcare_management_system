@@ -1,0 +1,15 @@
+<form method="post">
+    Fno <input type="text" name="fno" >
+    <br>  <br> <br>
+    Sno <input type="text" name="sno" >
+    <br> <br> <br>
+
+    <input type="submit" value="Sub" name="btn" >
+
+    {% csrf_token %}
+</form>
+
+{% if output %}
+Result is {{output}}
+{%endif%}
+
